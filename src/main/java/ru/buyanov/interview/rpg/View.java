@@ -29,7 +29,7 @@ public class View {
     }
 
     public void heroStats(Hero hero) {
-        system.printf("Your hero is %s and he is %d level adventurer with %d experience points. ", hero.getName(), hero.getLevel(), hero.getExperiencePoints());
+        system.printf("Your hero's name is '%s' and he is %d level adventurer with %d experience points. ", hero.getName(), hero.getLevel(), hero.getExperiencePoints());
         system.printf("He is damaging for %d points per hit, and has %d/%d health points left.%n",
                 hero.getDamagePoints(), hero.getHealthPoints(), hero.getMaximumHealthPoints());
     }
@@ -81,7 +81,7 @@ public class View {
 
     public void runFromMonster(Monster monster) {
         if (monster != null) {
-            system.printf("You ran away from %s. Trying to explore somewhere else.%n%n", monster.getName());
+            system.printf("You ran away from %s. Try to explore somewhere else.%n", monster.getName());
         }
     }
 

@@ -57,6 +57,7 @@ public class Main {
                     break;
                 case RUN:
                     view.runFromMonster(monster);
+                    monster = null;
                     break;
                 case FIGHT:
                     monster = fightService.performFight(hero, monster);
